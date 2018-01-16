@@ -1,6 +1,6 @@
 // Get references to the tbody element, input field and button
 var $tbody = document.querySelector("tbody");
-var $dateInput = document.querySelector("#date_time");
+var $dateInput = document.querySelector("#datetime");
 var $cityInput = document.querySelector("#city");
 var $stateInput = document.querySelector("#state");
 var $countryInput = document.querySelector("#country");
@@ -51,7 +51,39 @@ function handleSearchButtonClick() {
     // If true, add the date to the filteredUFO, otherwise don't add it to filteredUFO
     return ufoDate === filterDate;
   });
+
+  $(document).ready(function () {
+    var firstRecord = 0;
+    var rowSize = 50;
+    var tableRows=$("#pagetable tbody tr");
+    $("a.pagination").click(function(e){
+      e.preventDefault();
+      if ($(this).attr("id") == "next"){
+            if (firstRecord + rowSize <= tableRows.length){ 
+                firstRecord += rowSize;}
+            } else {
+            if (firstRecord!= 0)
+             { firstRecord  -= rowSize;}
+            }
+         paginate(firstRecord, rowSize);
+       });
+      
+     var paginate =function(startAt, rowSize){
+       var endAt=startAt + rowSize - 1;
+         $(tableRows).each(function(index){
+           if (index >= startAt && index <= endAt){
+             $(this).show();
+           } else{
+             $(this).hide();
+           }
+         });
+     }
+     paginate(firstRecord, rowSize);
+  });
+
   renderTable();
+
+
 }
 
 function handleSearchButtonClick1() {
@@ -66,6 +98,37 @@ function handleSearchButtonClick1() {
     // If true, add the city to the filteredUFO, otherwise don't add it to filteredUFO
     return ufoCity === filterCity;
   });
+
+  $(document).ready(function () {
+    var firstRecord = 0;
+    var rowSize = 50;
+    var tableRows=$("#pagetable tbody tr");
+    $("a.pagination").click(function(e){
+      e.preventDefault();
+      if ($(this).attr("id") == "next"){
+            if (firstRecord + rowSize <= tableRows.length){ 
+                firstRecord += rowSize;}
+            } else {
+            if (firstRecord!= 0)
+             { firstRecord  -= rowSize;}
+            }
+         paginate(firstRecord, rowSize);
+       });
+      
+     var paginate =function(startAt, rowSize){
+       var endAt=startAt + rowSize - 1;
+         $(tableRows).each(function(index){
+           if (index >= startAt && index <= endAt){
+             $(this).show();
+           } else{
+             $(this).hide();
+           }
+         });
+     }
+     paginate(firstRecord, rowSize);
+  });
+
+  
   renderTable();
 }
 
@@ -81,6 +144,36 @@ function handleSearchButtonClick2() {
     // If true, add the state to the filteredUFO, otherwise don't add it to filteredUFO
     return ufoState === filterState;
   });
+
+  $(document).ready(function () {
+    var firstRecord = 0;
+    var rowSize = 50;
+    var tableRows=$("#pagetable tbody tr");
+    $("a.pagination").click(function(e){
+      e.preventDefault();
+      if ($(this).attr("id") == "next"){
+            if (firstRecord + rowSize <= tableRows.length){ 
+                firstRecord += rowSize;}
+            } else {
+            if (firstRecord!= 0)
+             { firstRecord  -= rowSize;}
+            }
+         paginate(firstRecord, rowSize);
+       });
+      
+     var paginate =function(startAt, rowSize){
+       var endAt=startAt + rowSize - 1;
+         $(tableRows).each(function(index){
+           if (index >= startAt && index <= endAt){
+             $(this).show();
+           } else{
+             $(this).hide();
+           }
+         });
+     }
+     paginate(firstRecord, rowSize);
+  });
+
   renderTable();
 }
 
@@ -96,6 +189,36 @@ function handleSearchButtonClick3() {
     // If true, add the country to the filteredUFO, otherwise don't add it to filteredUFO
     return ufoCountry === filterCountry;
   });
+
+  $(document).ready(function () {
+    var firstRecord = 0;
+    var rowSize = 50;
+    var tableRows=$("#pagetable tbody tr");
+    $("a.pagination").click(function(e){
+      e.preventDefault();
+      if ($(this).attr("id") == "next"){
+            if (firstRecord + rowSize <= tableRows.length){ 
+                firstRecord += rowSize;}
+            } else {
+            if (firstRecord!= 0)
+             { firstRecord  -= rowSize;}
+            }
+         paginate(firstRecord, rowSize);
+       });
+      
+     var paginate =function(startAt, rowSize){
+       var endAt=startAt + rowSize - 1;
+         $(tableRows).each(function(index){
+           if (index >= startAt && index <= endAt){
+             $(this).show();
+           } else{
+             $(this).hide();
+           }
+         });
+     }
+     paginate(firstRecord, rowSize);
+  });
+
   renderTable();
 }
 
@@ -111,6 +234,36 @@ function handleSearchButtonClick4() {
     // If true, add the shape to the filteredUFO, otherwise don't add it to filteredUFO
     return ufoShape === filterShape;
   });
+
+  $(document).ready(function () {
+    var firstRecord = 0;
+    var rowSize = 50;
+    var tableRows=$("#pagetable tbody tr");
+    $("a.pagination").click(function(e){
+      e.preventDefault();
+      if ($(this).attr("id") == "next"){
+            if (firstRecord + rowSize <= tableRows.length){ 
+                firstRecord += rowSize;}
+            } else {
+            if (firstRecord!= 0)
+             { firstRecord  -= rowSize;}
+            }
+         paginate(firstRecord, rowSize);
+       });
+      
+     var paginate =function(startAt, rowSize){
+       var endAt=startAt + rowSize - 1;
+         $(tableRows).each(function(index){
+           if (index >= startAt && index <= endAt){
+             $(this).show();
+           } else{
+             $(this).hide();
+           }
+         });
+     }
+     paginate(firstRecord, rowSize);
+  });
+
   renderTable();
 }
 
