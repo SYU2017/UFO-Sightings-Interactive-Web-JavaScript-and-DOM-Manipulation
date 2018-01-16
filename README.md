@@ -1,6 +1,6 @@
 # Week14-Interactive-Web-JavaScript-and-DOM-Manipulation
 
-### Level 1: Automatic Table and Date Search
+### Level 1: Automatic Table and Date Search--"index.html" and "index.js"
 
 * Create a basic HTML web page--"index.html".
 
