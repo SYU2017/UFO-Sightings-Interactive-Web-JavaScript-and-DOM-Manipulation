@@ -35,3 +35,15 @@
 ### Dataset
 
 * [UFO Sightings Data](data.js)
+
+### DataTables resolution: " index-dataTables.html" and " index-dataTables.js"  
+DataTables is a plug-in for the jQuery Javascript library.
+It is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table.
+
+Pagination, instant search and multi-column ordering
+Supports almost any data source:
+DOM, Javascript, Ajax and server-side processing
+Easily theme-able: DataTables, jQuery UI, Bootstrap, Foundation
+
+I also created " index-dataTables.html" and " index-dataTables.js" to search the UFO sighting data. 
+
