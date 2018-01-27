@@ -22,6 +22,12 @@
   4. `country`
   5. `shape`
 
+![picture](image/ufo1.png)
+
+
+![picture](image/ufo2.png)
+
+
 ### Level 3: Paginated Table
 
 * Complete all of Level 2 criteria.
@@ -31,6 +37,8 @@
 * I put the pagination code in script in "index.html" and click search button in "index.js". 
 
 - - -
+
+![picture](image/ufo3.png)
 
 ### Dataset
 
