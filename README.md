@@ -1,4 +1,4 @@
-# Week14-Interactive-Web-JavaScript-and-DOM-Manipulation
+# Interactive-Web-JavaScript-and-DOM-Manipulation
 
 ### Level 1: Automatic Table and Date Search--"index.html" and "index.js"
 
