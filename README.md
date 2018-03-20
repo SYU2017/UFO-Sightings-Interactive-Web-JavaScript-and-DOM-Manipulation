@@ -22,10 +22,8 @@
   4. `country`
   5. `shape`
 
-![picture](image/UFO1.png)
+![picture](image/UFO.png)
 
-
-![picture](image/ufo2.png)
 
 
 ### Level 3: Paginated Table
